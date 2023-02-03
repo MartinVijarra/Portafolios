@@ -3,13 +3,12 @@
     height: 70px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .menu{
     display: flex;
     gap: 20px;
-    width: 100%;
-    justify-content: center;
 }
 
 .btn-nav {
@@ -56,13 +55,6 @@
     width: 100%;
     transition: .4s ease;
     z-index: -1;
-}
-
-.search{
-    color: #191c2c;
-    margin: 0 30px;
-    transition: .3s;
-    cursor: pointer;
 }
 
 @media (min-width: 320px) and (max-width: 412px) {
