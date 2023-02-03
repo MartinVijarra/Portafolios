@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 
 *{
   margin: 0;
@@ -8,10 +8,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.bg-video{
-  position: absolute;
+#svg{
   z-index: -1;
+  position: absolute;
   width: 100%;
   height: 100vh;
-  object-fit: cover;
+  top: 0px;
 }

@@ -1,6 +1,6 @@
 .NavBar{
     width: 100%;
-    height: 80px;
+    height: 70px;
     display: flex;
     align-items: center;
 }
@@ -15,7 +15,7 @@
 .btn-nav {
     background: transparent;
     border: none;
-    color: #222222;
+    color: #191c2c;
     position: relative;
     transition: .3s ease;
     padding-bottom: 4px;
@@ -34,12 +34,12 @@
     bottom: 0;
     height: 2px;
     width: 0;
-    background-color: #222222;
+    background-color: #191c2c;
     transition: .5s ease;
 }
   
 .btn-nav:hover {
-    color: #222222;
+    color: #191c2c;
     transition-delay: .2s;
 }
   
@@ -59,8 +59,23 @@
 }
 
 .search{
-    color: #222222;
+    color: #191c2c;
     margin: 0 30px;
     transition: .3s;
     cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 412px) {
+    .NavBar{
+        width: 100%;
+    }
+
+    .btn-nav {
+        border: none;
+        color: #191c2c;
+        font-weight: 500;
+        font-size: 15px;
+        list-style: none;
+        text-decoration: none;
+    }
 }

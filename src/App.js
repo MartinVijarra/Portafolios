@@ -1,17 +1,14 @@
 import './App.css';
-import { NavBar } from "./Components/NavBar"
-import { SideBar } from "./Components/SideBar"
 import { MainCover } from "./Components/MainCover"
-import video from "./Assets/bg-video.mp4"
+import Background from "./Assets/svg.png"
+import { Layout } from "./Layouts/Layout"
 
 function App() {
   return (
-    <>
-    <video src={video} muted autoPlay loop className="bg-video"></video>
-    <SideBar />
-    <NavBar />
+    <Layout>
+    <img src={Background} alt='Background-img' id='svg'></img>
     <MainCover />
-    </>
+    </Layout>
   )
 }
 
