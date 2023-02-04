@@ -19,17 +19,14 @@
     font-size: 35px;
     cursor: pointer;
     text-decoration: none;
-}
-
-.icon:hover{
-    transform: translateX(10px);
-}
-
-a{
     color: #191c2c;
     display: flex;
     justify-content: center;
     transition: .3s;
+}
+
+.icon:hover{
+    transform: translateX(10px);
 }
 
 @media (max-width: 965px) {

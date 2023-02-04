@@ -30,23 +30,6 @@ main{
     letter-spacing: -1px;
 }
 
-.cover{
-    height: 450px;
-    animation: move_vector 6s ease-in-out infinite;
-}
-
-@keyframes move_vector{
-    0%{
-        transform: translateY(-10px)
-    }
-    25%{
-        transform: translateY(-40px)
-    }
-    100%{
-        transform: translateY(-10px)
-    }
-}
-
 hr{
     margin: 20px;
     border-color: #55555581;

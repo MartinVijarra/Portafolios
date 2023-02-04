@@ -15,7 +15,7 @@
     color: #191c2c;
     padding: 30px;
     background: rgba(255, 255, 255, 0.644);
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
     gap: 0 50px;
@@ -35,7 +35,7 @@ p{
 }
 
 .picture{
-    height: 380px;
+    height: 360px;
     border-radius: 50%;
     object-fit: scale-down;
 }
