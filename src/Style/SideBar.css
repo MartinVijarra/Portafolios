@@ -6,6 +6,12 @@
     transition: .3s;
     position: fixed;
     z-index: 10;
+    border-right: 1px solid #aaaaaa;
+    background-color: #fff;
+}
+
+.contact-container:hover{
+    width: 80px;
 }
 
 .icons{

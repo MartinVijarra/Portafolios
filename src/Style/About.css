@@ -14,10 +14,10 @@
     align-items: center;
     color: #191c2c;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.644);
+    background: rgba(255, 255, 255, 0.726);
     border-radius: 12px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.308);
+    border: 1px solid #fff;
     gap: 0 50px;
 }
 
@@ -27,7 +27,6 @@
 
 .desc-title{
     font-size: 30px;
-    font-style: italic;
 }
 
 p{
@@ -44,17 +43,53 @@ p{
     position: absolute;
     width: 100%;
     z-index: -1;
-    bottom: 0px;
+    top: 0px;
+    height: 100vh;
 }
 
-@media (max-width: 1270px){
+@media (min-width: 401px) and (max-width: 1400px){
+    .about-container{
+        padding: 50px;
+    }
+    
     .about{
         flex-direction: column;
         text-align: center;
         gap: 30px;
+        width: 90%;   
     }
 
     .picture{
-        height: 280px;
+        height: 200px;
+    }
+
+    .description{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 400px){
+    .about-container{
+        padding: 10px;
+    }
+
+    .about{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px; 
+        width: 100%;
+        padding: 10px; 
+    }
+
+    .picture{
+        height: 200px;
+    }
+
+    .desc-title{
+        font-size: 20px;
+    }
+
+    .description{
+        font-size: 15px;
     }
 }

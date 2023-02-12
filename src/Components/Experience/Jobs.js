@@ -1,5 +1,4 @@
 import { Layout } from "../../Layouts/Layout"
-import JobsBg from "../../Assets/jobs-bg2.png"
 import HtmlIcon from "../../Icons/HtmlIcon.png"
 import CssIcon from "../../Icons/CssIcon.png"
 import JsIcon from "../../Icons/JsIcon.png"
@@ -10,7 +9,6 @@ import "../../Style/Jobs.css"
 function Jobs() {
   return (
     <Layout>
-        <img src={JobsBg} alt="Jobs Background" id="svg3"></img>
         <div className="jobs-container">
           <div className="jobs">
 
@@ -24,8 +22,8 @@ function Jobs() {
                   <img src={CssIcon} alt="Css Icon" className="web-icon"></img>
                   <img src={JsIcon} alt="Javascript Icon" className="web-icon"></img>
                 </div>
-                <p>También se implementó la librería de <b>Toastify</b> para las notificaciones que aparecen al borrar un resultado de la pantalla.</p>
-                <p>Cabe destacar que el conversor también es responsive para la mayoría de los dispositivos móviles.</p>
+                <p>Se implementó la librería de <b>Toastify</b> para las notificaciones que aparecen al borrar un resultado de la pantalla y se utilizó la API Rest de <a href="https://www.exchangerate-api.com/" target="_blank" rel="noreferrer">ExchangeRate-API</a>.</p>
+                <p>Cabe destacar que la aplicación realiza conversiones en 160 monedas de distintos países y es responsive para la mayoría de los dispositivos.</p>
                 <button className="btn-info"><a href="https://martinvijarra.github.io/conversor-de-divisas.github.io/" id="enlace" rel="noreferrer" target='_blank'>Ir al sitio</a></button>
               </div>
               <img src={Conversor} alt="conversor de divisas" id="conversor-img"></img>
