@@ -3,13 +3,13 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
 }
 
 .jobs{
     background-color: rgba(255, 255, 255, 0.575);
-    width: 1200px;
     margin: auto;
-    background: rgba(255, 255, 255, 0.644);
     border-radius: 12px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    gap: 0 40px;
 }
 
 .text-info{
@@ -69,4 +70,68 @@ h4{
     height: 100vh;
     z-index: -1;
     bottom: 0px;
+}
+
+@media (min-width: 401px) and (max-width: 1400px){
+    .jobs-container{
+        top: 150px;
+        transform: translateY(0);
+        padding: 0 60px;
+    }
+    
+    .conversor-de-divisas{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .text-info{
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    #conversor-img{
+        width: 300px;
+        margin: auto;
+    }
+
+    .web-icon{
+        height: 50px;
+        
+    }
+}
+
+@media (min-width: 280px) and (max-width: 400px){
+    .jobs-container{
+        top: 100px;
+        transform: translateY(0);
+        padding: 0 60px;
+    }
+    
+    .conversor-de-divisas{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    h4{
+        font-size: 22px;
+    }
+
+    .text-info{
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    #conversor-img{
+        width: 300px;
+        margin: auto;
+    }
+
+    .web-icon{
+        height: 50px;
+        
+    }
 }

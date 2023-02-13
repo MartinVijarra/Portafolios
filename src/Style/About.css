@@ -70,7 +70,7 @@ p{
 
 @media (min-width: 280px) and (max-width: 400px){
     .about-container{
-        padding: 10px;
+        padding: 0;
     }
 
     .about{
@@ -82,7 +82,7 @@ p{
     }
 
     .picture{
-        height: 200px;
+        height: 180px;
     }
 
     .desc-title{

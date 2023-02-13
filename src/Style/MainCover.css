@@ -9,8 +9,10 @@ main{
 
 .main-container{
     display: flex;
+    align-items: center;
     margin: 0 160px;
     padding: 50px;
+    gap: 0 40px;
 }
 
 .main-text{
@@ -30,17 +32,20 @@ main{
     letter-spacing: -1px;
 }
 
-hr{
-    margin: 20px;
-    border-color: #55555581;
-}
-
 .text-description{
     font-size: 22px;
     font-weight: 400;
     font-family: Arial;
     color: #222222bb;
     padding: 20px 0;
+}
+
+.cover{
+    height: 450px;
+}
+
+#a{
+    display: contents;
 }
 
 .btn-info {
@@ -51,7 +56,7 @@ hr{
     transition: all .2s;
     border: none;
     color: #fff;
-    background-color: #3a3d47;
+    background-color: #191c2c;
     cursor: pointer;
 }
    
@@ -65,7 +70,6 @@ hr{
    
 .btn-info::after {
     content: "";
-    display: inline-block;
     height: 100%;
     width: 100%;
     border-radius: 10px;
@@ -85,11 +89,34 @@ hr{
     opacity: 0;
 }
 
-@media (max-width: 965px) {
-    
+@media (min-width: 401px) and (max-width: 1400px) {
     .main-container{
         margin: auto;
         text-align: center;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .main-logo{
+        font-size: 70px;
+        line-height: 55px;
+    }
+    
+    .cover{
+        display: none;
+    }
+
+    .btn-info {
+        margin: auto;
+    }
+  }
+
+  @media (min-width: 280px) and (max-width: 400px){
+    .main-container{
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+        flex-direction: column;
     }
 
     .main-logo{
@@ -103,8 +130,14 @@ hr{
 
     .btn-info{
         margin: auto;
+        padding: 6px;
+        width: 140px;
     }
     .btn-info:active{
         transform: translateY(0);
+    }
+
+    .cover{
+        display: none;
     }
   }

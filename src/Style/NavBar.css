@@ -3,8 +3,17 @@
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     border-bottom: 1px solid #aaaaaa;
+}
+
+.menu-container{
+    padding: 0 40px;
+}
+
+.logo{
+    color: #191c2c;
+    position: relative;
 }
 
 .menu{
@@ -37,6 +46,16 @@
     background-color: #191c2c;
     transition: .5s ease;
 }
+
+.btn-bars{
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    padding: 5px;
+    outline: none;
+    color: #191c2c;
+    cursor: pointer;
+}
   
 .btn-nav:hover {
     color: #191c2c;
@@ -58,17 +77,21 @@
     z-index: -1;
 }
 
-@media (min-width: 320px) and (max-width: 412px) {
-    .NavBar{
+@media (min-width: 280px) and (max-width: 1024px) {
+    header .menu-container {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
         width: 100%;
+        background-color: #191c2c;
+        transition: 1s;
+        flex-direction: column;
+        transform: translateY(-100%);
     }
-
-    .btn-nav {
-        border: none;
-        color: #191c2c;
-        font-weight: 500;
-        font-size: 15px;
-        list-style: none;
-        text-decoration: none;
+    
+    .btn-nav{
+        color: #fff;
     }
 }
