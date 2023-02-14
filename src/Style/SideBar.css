@@ -1,6 +1,6 @@
 .contact-container{
     height: 100vh;
-    width: 70px;
+    width: 65px;
     display: flex;
     align-items: center;
     transition: .3s;
@@ -11,7 +11,7 @@
 }
 
 .contact-container:hover{
-    width: 80px;
+    width: 75px;
 }
 
 .icons{

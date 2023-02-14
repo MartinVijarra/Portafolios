@@ -50,6 +50,8 @@ p{
 @media (min-width: 401px) and (max-width: 1400px){
     .about-container{
         padding: 50px;
+        top: 80px;
+        transform: translateY(0);
     }
     
     .about{
@@ -70,7 +72,7 @@ p{
 
 @media (min-width: 280px) and (max-width: 400px){
     .about-container{
-        padding: 0;
+        padding: 20px;
     }
 
     .about{

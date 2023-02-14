@@ -1,4 +1,4 @@
-.nav-bar{
+header{
     width: 100%;
     height: 70px;
     display: flex;
@@ -7,7 +7,7 @@
     border-bottom: 1px solid #aaaaaa;
 }
 
-.menu-container{
+nav{
     padding: 0 40px;
 }
 
@@ -18,7 +18,6 @@
 
 .menu{
     display: flex;
-    gap: 20px;
 }
 
 .btn-nav {
@@ -55,6 +54,7 @@
     outline: none;
     color: #191c2c;
     cursor: pointer;
+    display: none;
 }
   
 .btn-nav:hover {
@@ -78,7 +78,11 @@
 }
 
 @media (min-width: 280px) and (max-width: 1024px) {
-    header .menu-container {
+    header{
+        height: 60px;
+    }
+    
+    header nav {
         height: 100%;
         position: fixed;
         top: 0;
@@ -87,11 +91,38 @@
         width: 100%;
         background-color: #191c2c;
         transition: 1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        transform: translateY(-100vh);
+    }
+
+    .menu{
         flex-direction: column;
-        transform: translateY(-100%);
+        gap: 30px 0;
     }
     
     .btn-nav{
         color: #fff;
+        font-size: 35px;
+        text-transform: uppercase;
+        text-align: center;
+        
+    }
+
+    .btn-bars{
+        display: inline;
+    }
+
+    header .btn-close{
+        position: absolute;
+        color: #fff;
+        top: 15px;
+        right: 20%;
+    }
+
+    header .responsive-nav{
+        transform: none;
     }
 }
