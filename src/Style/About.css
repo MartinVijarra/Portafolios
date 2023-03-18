@@ -63,6 +63,19 @@ p{
     transform: scale(1.2);
 }
 
+#cv-download{
+    text-decoration: none;
+    color: #fff;
+}
+
+.cv{
+    margin: 30px 0;
+}
+
+#DownloadOutlined{
+    font-size: 16px;
+}
+
 @media (min-width: 401px) and (max-width: 1200px){
     .about-container{
         padding: 10px;
@@ -111,7 +124,7 @@ p{
     }
 
     .description{
-        font-size: 20px;
+        font-size: 18px;
         width: 320px;
     }
 

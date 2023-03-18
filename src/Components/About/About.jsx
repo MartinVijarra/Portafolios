@@ -7,6 +7,8 @@ import ReactIcon from "../../Icons/ReactIcon.png"
 import LinuxIcon from "../../Icons/linux-icon.png"
 import NpmIcon from "../../Icons/npm-icon.png"
 import GitIcon from "../../Icons/git-icon.png"
+import Curriculum from "../../Assets/CV - Martin Vijarra.pdf"
+import { DownloadOutlined } from "@ant-design/icons"
 import "../../Style/About.css"
 
 function About() {
@@ -32,6 +34,7 @@ function About() {
               <img src={NpmIcon} alt="Npm-icon" className="skill-icon"/>
               <img src={GitIcon} alt="Git-icon" className="skill-icon"/>
             </div>
+          <button className="btn-info cv"><a href={Curriculum} id="cv-download" rel="noreferrer" target='_blank'>Descargar CV <DownloadOutlined id="DownloadOutlined"/></a></button>
           </div>
         </div>
       </div>
