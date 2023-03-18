@@ -4,61 +4,76 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 80px;
 }
 
 .about{
     display: flex;
-    width: 1200px;
+    width: 1400px;
+    justify-content: space-around;
     align-items: center;
     color: #191c2c;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.726);
-    border-radius: 12px;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.308);
-    border: 1px solid #fff;
-    gap: 0 50px;
 }
 
 .description{
-    font-size: 24px;
+    font-size: 22px;
+    width: 500px;
 }
 
-.desc-title{
+.about-title{
     font-size: 30px;
+    margin: 30px 0 0 0;
 }
 
 p{
-    color: #3a3d47;  
+    color: #3a3d47;
 }
 
 .picture{
-    height: 360px;
+    height: 330px;
     border-radius: 50%;
     object-fit: scale-down;
 }
 
-#svg2{
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    top: 0px;
-    height: 100vh;
+
+.skills-container{
+    margin: 10px 0 0 0;
 }
 
-@media (min-width: 401px) and (max-width: 1400px){
+.skills-title{
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 80fr 80fr 80fr;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.skill-icon{
+    height: 110px;
+    transition: .3s;
+}
+
+.skill-icon:hover{
+    transform: scale(1.2);
+}
+
+@media (min-width: 401px) and (max-width: 1200px){
     .about-container{
-        padding: 50px;
+        padding: 10px;
         top: 80px;
         transform: translateY(0);
     }
     
     .about{
         flex-direction: column;
-        text-align: center;
-        gap: 30px;
-        width: 90%;   
+        text-align: center;  
+        padding: 0;
     }
 
     .picture{
@@ -67,31 +82,45 @@ p{
 
     .description{
         font-size: 18px;
+        width: 380px;
+    }
+
+    .skills{
+        padding: 0;
+        gap: 60px;
+    }
+
+    .skill-icon{
+        height: 90px;
     }
 }
 
 @media (min-width: 280px) and (max-width: 400px){
     .about-container{
-        padding: 20px;
+        padding: 10px;
     }
 
     .about{
         flex-direction: column;
         text-align: center;
-        gap: 10px; 
-        width: 100%;
-        padding: 10px; 
+        padding: 0;
     }
 
     .picture{
         height: 180px;
     }
 
-    .desc-title{
+    .description{
         font-size: 20px;
+        width: 320px;
     }
 
-    .description{
-        font-size: 15px;
+    .skills{
+        padding: 0;
+        gap: 50px;
+    }
+
+    .skill-icon{
+        height: 80px;
     }
 }

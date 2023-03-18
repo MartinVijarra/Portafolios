@@ -2,7 +2,7 @@ import { Layout } from "../../Layouts/Layout"
 import HtmlIcon from "../../Icons/HtmlIcon.png"
 import CssIcon from "../../Icons/CssIcon.png"
 import JsIcon from "../../Icons/JsIcon.png"
-import ReactIcon from "../../Icons/ReactIcon.png"
+// import ReactIcon from "../../Icons/ReactIcon.png"
 import Conversor from "../../Assets/conversor.png"
 import "../../Style/Jobs.css"
 
